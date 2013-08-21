@@ -1,0 +1,19 @@
+﻿extends layout
+
+block content
+ #wrapper
+    #display
+        #header  Welcome to online book store
+        #login
+          form(method='post')
+            .username User Name
+            div
+              input.textBox(type='text', name='username')
+              input.btn(type='submit', value='Log In')
+      #footer
+        div Copyright &#169; OBS Store 2013 
+        a(href='/page?name=about') About 
+        | |
+        a(href='/page?name=contact') Contact Us
+
+  
